@@ -49,7 +49,7 @@ const Editor = () => {
     }, []);
 
     useEffect(() => {
-        const socketServer = io('');
+        const socketServer = io();
         setSocket(socketServer);
         return () => {
             socketServer.disconnect();
